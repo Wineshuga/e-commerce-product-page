@@ -36,6 +36,10 @@ body {
     width: 2rem;
 }
 
+.image--previous, .image--next {
+    display: none;
+}
+
 @media screen and (max-width: 1023px) and (min-width: 768px) {
     
 }
@@ -63,6 +67,28 @@ body {
 
     .header--menu_cart {
         margin-right: 0.8rem;
+    }
+
+    .image--previous, .image--next {
+        display: block;
+        position: absolute;
+        background-color: var(--white-color);
+        padding: 0.5rem 0.7rem;
+        border-radius: 50%;
+    }
+
+    .image--previous {
+        bottom: 16rem;
+        left: 1rem;
+    }
+
+    .image--next {
+        top: 15.5rem;
+        right: 1rem;
+    }
+
+    .image--container, .image--product_1 {
+        width: 100%;
     }
 
 }
