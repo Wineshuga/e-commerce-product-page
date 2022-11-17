@@ -48,8 +48,25 @@ body {
     .header--menu_one {
         display: none;
     }
+
+    .header {
+        padding: 1rem 1.5rem;
+    }
+
+    .header--menu_icon {
+        margin-right: 0.5rem;
+    }
+
+    .header--menu_avatar {
+        width: 1.7rem;
+    }
+
+    .header--menu_cart {
+        margin-right: 0.8rem;
+    }
+
 }
 
 @media screen and (max-width: 425px) and (min-width: 280px) {
-    
+
 }
