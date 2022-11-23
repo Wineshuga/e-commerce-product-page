@@ -22,13 +22,15 @@ body {
     /*(with 75% opacity for lightbox background)*/
 }
 
-.header, .header--menu, .header--menu_one {
+.header,
+.header--menu,
+.header--menu_one {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-.header--menu_icon {
+.header--menu_icon, .icon-close {
     display: none;
 }
 
@@ -36,25 +38,54 @@ body {
     width: 2rem;
 }
 
-.image--previous, .image--next {
+.image--previous,
+.image--next {
     display: none;
 }
 
-@media screen and (max-width: 1023px) and (min-width: 768px) {
-    
-}
+@media screen and (max-width: 425px) and (min-width: 280px) {
+    .main {
+        padding: 1rem 2rem;
+    }
 
-@media screen and (max-width: 767px) and (min-width: 280px) {
-    .header--menu_icon{
+    .main>div {
+        margin: 1rem 0;
+    }
+
+    .header--menu_icon {
         display: initial;
     }
 
     .header--menu_one {
+        display: block;
+    }
+
+    .header--menu_one > li > a {
+        color: var(--black-color);
+        font-weight: 700;
+        line-height: 2.5;
+    }
+
+    .icon-close {
+        display: block;
+        margin-bottom: 1rem;
+    }
+
+    .header--menu {
         display: none;
+        position: absolute;
+        background-color: var(--white-color);
+        width: 60%;
+        z-index: 1;
+        height: 100vh;
+        padding: 1.3rem;
+        top: 0;
+        left: 0;
     }
 
     .header {
         padding: 1rem 1.5rem;
+        position: relative;
     }
 
     .header--menu_icon {
@@ -69,30 +100,112 @@ body {
         margin-right: 0.8rem;
     }
 
-    .image--previous, .image--next {
+    .image--previous,
+    .image--next {
         display: block;
-        position: absolute;
         background-color: var(--white-color);
         padding: 0.5rem 0.7rem;
         border-radius: 50%;
     }
 
-    .image--previous {
-        bottom: 16rem;
-        left: 1rem;
+    .image_arrows {
+        position: absolute;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        padding: 0 1rem;
+        top: 15rem;
     }
 
-    .image--next {
-        top: 15.5rem;
-        right: 1rem;
+    .image--container {
+        position: relative;
     }
 
-    .image--container, .image--product_1 {
+    .image--container,
+    .image--product_1 {
         width: 100%;
     }
 
-}
+    .main--title,
+    .main--heading {
+        margin-bottom: 0.5rem;
+    }
 
-@media screen and (max-width: 425px) and (min-width: 280px) {
+    .main--title {
+        color: var(--orange-color);
+        font-size: 12px;
+        letter-spacing: 1px;
+        margin-bottom: 0.5rem;
+    }
 
+    .main--text {
+        font-size: 13px;
+        color: var(--dark-grayish-blue-color);
+        line-height: 1.5;
+    }
+
+    .main--heading {
+        font-size: 1.5rem;
+    }
+
+    .item--price,
+    .item--price_and_discount {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-weight: 700;
+    }
+
+    .item--price_and_discount {
+        width: 10rem;
+    }
+
+    .item--price_total {
+        font-size: 1.8rem;
+    }
+
+    .item--price_discount,
+    .item--price_strikethrough {
+        font-size: 14px;
+    }
+
+    .item--price_discount {
+        color: var(--orange-color);
+        padding: 0.2rem;
+        background-color: var(--pale-orange-color);
+    }
+
+    .item--price_strikethrough {
+        color: var(--grayish-blue-color);
+        text-decoration: line-through;
+    }
+
+    .item--add_minus {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        background-color: var(--light-grayish-blue-color);
+        padding: 1rem;
+        border-radius: 0.5rem;
+        font-weight: 700;
+        width: 100%;
+    }
+
+    .button {
+        width: 100%;
+        color: var(--white-color);
+        background-color: var(--orange-color);
+        border: none;
+        border-radius: 0.5rem;
+        padding: 1rem;
+        font-weight: 700;
+    }
+
+    .button>span {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+    }
 }
