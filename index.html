@@ -34,19 +34,30 @@
             <img class="header--menu_avatar" src="./images/image-avatar.png" alt="avatar">
         </div>
     </header>
-    <main>
+    <hr />
+    <main class="main">
         <div class="image_container">
-            <div class="empty">
-            <div class="empty-div"></div>
             <div class="image_arrows">
                 <img class="image--previous" src="./images/icon-previous.svg" alt="">
                 <img class="image--next" src="./images/icon-next.svg" alt="">
             </div>
-            <div class="empty-div"></div>
             <img class="image--product_1" src="./images/image-product-1.jpg" alt="">
+            <div class="image--lightbox">
+                <div class="image--product">
+                    <img src="./images/image-product-1-thumbnail.jpg" alt="">
+                </div>
+                <div class="image--product_2">
+                    <img src="./images/image-product-2-thumbnail.jpg" alt="">
+                </div>
+                <div class="image--product_3">
+                    <img src="./images/image-product-3-thumbnail.jpg" alt="">
+                </div>
+                <div class="image--product_4">
+                    <img src="./images/image-product-4-thumbnail.jpg" alt="">
+                </div>
+            </div>
         </div>
-        </div>
-        <section class="main">
+        <section class="main--section">
             <h1 class="main--title">SNEAKER COMPANY</h1>
             <h1 class="main--heading">Fall Limited Edition Sneakers</h1>
             <p class="main--text">These low-profile sneakers are your perfect
@@ -58,19 +69,21 @@
                 <div class="item--price_and_discount">
                     <p class="item--price_total">$125.00</p>
                     <p class="item--price_discount">50%</p>
-                    </div>
+                </div>
                 <p class="item--price_strikethrough">$250.00</p>
             </div>
-            <div class="item--add_minus">
-                <img src="./images/icon-minus.svg" alt="">
-                <p id="item--amount">0</p>
-                <img src="./images/icon-plus.svg" alt="">
+            <div class="plus-and-button">
+                <div class="item--add_minus">
+                    <img id="minus" src="./images/icon-minus.svg" alt="">
+                    <p id="item--amount">0</p>
+                    <img id="plus" src="./images/icon-plus.svg" alt="">
+                </div>
+                <button id="button"><span><img src="./images/icon-cart.svg" alt="">
+                        <p>Add to cart</p>
+                    </span></button>
             </div>
-            <button class="button"><span><img src="./images/icon-cart.svg" alt=""><p>Add to cart</p></span></button>
         </section>
     </main>
-
-
     <script src="/index.js"></script>
 </body>
 
