@@ -44,8 +44,14 @@ hr {
     padding: 2rem 2rem 1rem 2rem;
 }
 
+.header--menu_cart {
+    cursor: pointer;
+}
+
 .image--previous,
-.image--next {
+.image--next,
+.image--modal,
+.icon-modal_close {
     display: none;
 }
 
@@ -114,6 +120,7 @@ hr {
     border-radius: 0.5rem;
     font-weight: 700;
     width: 100%;
+    cursor: pointer;
 }
 
 #button {
@@ -170,6 +177,7 @@ hr {
         width: 450px;
         height: 400px;
         border-radius: 10px;
+        cursor: pointer;
     }
 
     .image--lightbox {
@@ -185,12 +193,52 @@ hr {
         width: 100px;
     }
 
-    .image--product > img,
-    .image--product_2 > img,
-    .image--product_3 > img,
-    .image--product_4 > img {
+    .image--product>img,
+    .image--product_2>img,
+    .image--product_3>img,
+    .image--product_4>img {
         border-radius: 10px;
         width: 100%;
+        cursor: pointer;
+    }
+
+    .image--modal {
+        display: none;
+        align-items: center;
+        justify-content: center;
+        position: fixed;
+        background-color: hsl(0, 0%, 0%, 75%);
+        width: 100%;
+        height: 100%;
+    }
+
+    .image--on_modal {
+        width: 450px;
+        border-radius: 10px;
+    }
+
+    .icon-modal_close {
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 32%;
+    }
+
+    .image--modal_arrows {
+        display: flex;
+        position: absolute;
+        justify-content: space-between;
+        align-items: center;
+        width: 485px;
+        top: 40%;
+    }
+
+    .image--modal_previous,
+    .image--modal_next {
+        display: block;
+        padding: 0.5rem 0.6rem;
+        border-radius: 50%;
+        background-color: var(--white-color);
     }
 
     .main--heading {
