@@ -51,7 +51,8 @@ hr {
 .image--previous,
 .image--next,
 .image--modal,
-.icon-modal_close {
+.icon-modal_close,
+.main--slide {
     display: none;
 }
 
@@ -186,17 +187,11 @@ hr {
         margin-top: 1rem;
     }
 
-    .image--product,
-    .image--product_2,
-    .image--product_3,
-    .image--product_4 {
+    .image--column {
         width: 100px;
     }
 
-    .image--product>img,
-    .image--product_2>img,
-    .image--product_3>img,
-    .image--product_4>img {
+    .image--column > img {
         border-radius: 10px;
         width: 100%;
         cursor: pointer;
@@ -222,6 +217,7 @@ hr {
         position: absolute;
         top: 20px;
         right: 32%;
+        cursor: pointer;
     }
 
     .image--modal_arrows {
@@ -239,6 +235,15 @@ hr {
         padding: 0.5rem 0.6rem;
         border-radius: 50%;
         background-color: var(--white-color);
+    }
+
+    .demo:active {
+        opacity: 0.9;
+        border: 2px solid var(--orange-color);
+    }
+
+    .demo:hover {
+        opacity: 0.9;
     }
 
     .main--heading {
