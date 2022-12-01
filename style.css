@@ -189,6 +189,13 @@ hr {
 
     .image--column {
         width: 100px;
+        height: 100px;
+        background-color: white;
+        border-radius: 10px;
+    }
+
+    .image--column:active {
+        border: 2px solid var(--orange-color);
     }
 
     .image--column > img {
@@ -202,6 +209,7 @@ hr {
         align-items: center;
         justify-content: center;
         position: fixed;
+        z-index: 1;
         background-color: hsl(0, 0%, 0%, 75%);
         width: 100%;
         height: 100%;
@@ -237,13 +245,8 @@ hr {
         background-color: var(--white-color);
     }
 
-    .demo:active {
-        opacity: 0.9;
-        border: 2px solid var(--orange-color);
-    }
-
-    .demo:hover {
-        opacity: 0.9;
+    .demo:active, .demo:hover {
+        opacity: 0.5;
     }
 
     .main--heading {
